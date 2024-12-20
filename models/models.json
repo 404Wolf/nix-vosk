@@ -1,0 +1,372 @@
+[
+  {
+    "model_name": "vosk-model-small-en-us-0_15",
+    "url": "https://alphacephei.com/vosk/models/vosk-model-small-en-us-0.15.zip",
+    "hash": "1614jj01gx4zz5kq6fj2lclwp1m6swnk1js2isa9yi7bqi165wih"
+  },
+  {
+    "model_name": "vosk-model-en-us-0_22-lgraph",
+    "url": "https://alphacephei.com/vosk/models/vosk-model-en-us-0.22-lgraph.zip",
+    "hash": "0d23kkmh1dgvp98zkjx7nam9l4nax80a7b7m2x55r9w2m958p0yr"
+  },
+  {
+    "model_name": "vosk-model-en-us-0_22",
+    "url": "https://alphacephei.com/vosk/models/vosk-model-en-us-0.22.zip",
+    "hash": "1xk9gg15ikv47qqbdhlnny9hhg1rmhv5q5qrsc5vp783pcgaiya7"
+  },
+  {
+    "model_name": "vosk-model-en-us-daanzu-20200905",
+    "url": "https://alphacephei.com/vosk/models/vosk-model-en-us-daanzu-20200905.zip",
+    "hash": "1f78clj0myy8bqsnbcvyw37afdqf7lhpx4v4jf2jrmfjh4q7w55p"
+  },
+  {
+    "model_name": "vosk-model-en-us-0_42-gigaspeech",
+    "url": "https://alphacephei.com/vosk/models/vosk-model-en-us-0.42-gigaspeech.zip",
+    "hash": "0c1zpxaxl5wzi6wa1pah4pcsp4lpbv2hssb2d72v73xwn2cmqxfn"
+  },
+  {
+    "model_name": "vosk-model-en-us-daanzu-20200905-lgraph",
+    "url": "https://alphacephei.com/vosk/models/vosk-model-en-us-daanzu-20200905-lgraph.zip",
+    "hash": "1wpc12skj4377hiips1wqjhvyaw4v6i9a4qha7pddys5k0hjrdf1"
+  },
+  {
+    "model_name": "vosk-model-small-en-us-zamia-0_5",
+    "url": "https://alphacephei.com/vosk/models/vosk-model-small-en-us-zamia-0.5.zip",
+    "hash": "1kfpq505izhi8fpjbq1050jqv0k83bz7lzqjbh3fgbbwwsx2aw3s"
+  },
+  {
+    "model_name": "vosk-model-en-us-librispeech-0_2",
+    "url": "https://alphacephei.com/vosk/models/vosk-model-en-us-librispeech-0.2.zip",
+    "hash": "1qhqr8iblm4wf00a7v6ya2inrzc6hpsbipdfpaak0c5nyafz8qs4"
+  },
+  {
+    "model_name": "vosk-model-en-us-aspire-0_2",
+    "url": "https://alphacephei.com/vosk/models/vosk-model-en-us-aspire-0.2.zip",
+    "hash": "0qacky56al157f54zapngllb816xgqzncsjvq043cxqxhr7q35aj"
+  },
+  {
+    "model_name": "vosk-model-en-us-0_21",
+    "url": "https://alphacephei.com/vosk/models/vosk-model-en-us-0.21.zip",
+    "hash": "1kwlr5sl685z768jg5scjgppjvv17pvhxqw1xanf5iwr9ply8h72"
+  },
+  {
+    "model_name": "vosk-model-small-en-in-0_4",
+    "url": "https://alphacephei.com/vosk/models/vosk-model-small-en-in-0.4.zip",
+    "hash": "1isc8lsi5zarn2jb9qf69s76hjil761xjm4wawx7ijymqk53sri0"
+  },
+  {
+    "model_name": "vosk-model-small-cn-0_22",
+    "url": "https://alphacephei.com/vosk/models/vosk-model-small-cn-0.22.zip",
+    "hash": "1fhlbfnjkzzpn2xryv2qinqcz8rp09cdzrac86fswdgqw3kv1y1s"
+  },
+  {
+    "model_name": "vosk-model-en-in-0_5",
+    "url": "https://alphacephei.com/vosk/models/vosk-model-en-in-0.5.zip",
+    "hash": "0p0gnw5gbb1w43aarlsdw3vnpnj2rqsgjb43vv18339hg4pwar83"
+  },
+  {
+    "model_name": "vosk-model-ru-0_42",
+    "url": "https://alphacephei.com/vosk/models/vosk-model-ru-0.42.zip",
+    "hash": "0aclgqhpfgi5i3qyipazd8jq44lfak9jqw6g3bd94113v1g9xsq0"
+  },
+  {
+    "model_name": "vosk-model-small-ru-0_22",
+    "url": "https://alphacephei.com/vosk/models/vosk-model-small-ru-0.22.zip",
+    "hash": "1m26kb4wa91zgb8vblh14dlaqnzsf6md0r4qwrnsmx0pibwmy7cn"
+  },
+  {
+    "model_name": "vosk-model-cn-0_22",
+    "url": "https://alphacephei.com/vosk/models/vosk-model-cn-0.22.zip",
+    "hash": "189gxhmy7nyqxbaagxsdjzppivahi4vkg0z6ig7find3gjzq0mbz"
+  },
+  {
+    "model_name": "vosk-model-ru-0_10",
+    "url": "https://alphacephei.com/vosk/models/vosk-model-ru-0.10.zip",
+    "hash": "1vnk8cw9xvvpadh17ldrldfizqljblypcjb84hvavd26hgxzm4kj"
+  },
+  {
+    "model_name": "vosk-model-small-fr-0_22",
+    "url": "https://alphacephei.com/vosk/models/vosk-model-small-fr-0.22.zip",
+    "hash": "1b8jps3xgzm3d5fmwlh9glx9ym2yplvs8hwxk8x9psvpw6063gya"
+  },
+  {
+    "model_name": "vosk-model-fr-0_22",
+    "url": "https://alphacephei.com/vosk/models/vosk-model-fr-0.22.zip",
+    "hash": "0ihy93n6m5v9q22ky2hs1yvavsck3l592ppgdkp9v7qvxbjk8v5j"
+  },
+  {
+    "model_name": "vosk-model-small-fr-pguyot-0_3",
+    "url": "https://alphacephei.com/vosk/models/vosk-model-small-fr-pguyot-0.3.zip",
+    "hash": "0lqjgslnf7dab1l9faw780kf65wcad04cdr7jiaqr6n6zd7cw30p"
+  },
+  {
+    "model_name": "vosk-model-fr-0_6-linto-2_2_0",
+    "url": "https://alphacephei.com/vosk/models/vosk-model-fr-0.6-linto-2.2.0.zip",
+    "hash": null
+  },
+  {
+    "model_name": "vosk-model-de-0_21",
+    "url": "https://alphacephei.com/vosk/models/vosk-model-de-0.21.zip",
+    "hash": null
+  },
+  {
+    "model_name": "vosk-model-de-tuda-0_6-900k",
+    "url": "https://alphacephei.com/vosk/models/vosk-model-de-tuda-0.6-900k.zip",
+    "hash": null
+  },
+  {
+    "model_name": "vosk-model-small-de-zamia-0_3",
+    "url": "https://alphacephei.com/vosk/models/vosk-model-small-de-zamia-0.3.zip",
+    "hash": "19nl3p28msyn732hgdan1s3fjnfcvwg9hzak0aabbgwrjyk81c7q"
+  },
+  {
+    "model_name": "vosk-model-small-de-0_15",
+    "url": "https://alphacephei.com/vosk/models/vosk-model-small-de-0.15.zip",
+    "hash": "0hsy7mqk3hg271jb0hndjz6h726mxikb6qndyib898zhn683rrdp"
+  },
+  {
+    "model_name": "vosk-model-small-es-0_42",
+    "url": "https://alphacephei.com/vosk/models/vosk-model-small-es-0.42.zip",
+    "hash": "07siqri1f9j5mlzxardw23ccyslkv7ikd5z0nkqg4gk3iy43kch9"
+  },
+  {
+    "model_name": "vosk-model-es-0_42",
+    "url": "https://alphacephei.com/vosk/models/vosk-model-es-0.42.zip",
+    "hash": "1kmz43zh63vrmscjfbzvqw9krhgw6ic6p220s6qdrmdy769azgxv"
+  },
+  {
+    "model_name": "vosk-model-small-pt-0_3",
+    "url": "https://alphacephei.com/vosk/models/vosk-model-small-pt-0.3.zip",
+    "hash": "1dwkbqwnr0h8ngxbx5gipl1g7zyairi3v2p6i1xgl6if0c4yj73f"
+  },
+  {
+    "model_name": "vosk-model-pt-fb-v0_1_1-20220516_2113",
+    "url": "https://alphacephei.com/vosk/models/vosk-model-pt-fb-v0.1.1-20220516_2113.zip",
+    "hash": null
+  },
+  {
+    "model_name": "vosk-model-el-gr-0_7",
+    "url": "https://alphacephei.com/vosk/models/vosk-model-el-gr-0.7.zip",
+    "hash": null
+  },
+  {
+    "model_name": "vosk-model-small-tr-0_3",
+    "url": "https://alphacephei.com/vosk/models/vosk-model-small-tr-0.3.zip",
+    "hash": null
+  },
+  {
+    "model_name": "vosk-model-small-vn-0_4",
+    "url": "https://alphacephei.com/vosk/models/vosk-model-small-vn-0.4.zip",
+    "hash": null
+  },
+  {
+    "model_name": "vosk-model-vn-0_4",
+    "url": "https://alphacephei.com/vosk/models/vosk-model-vn-0.4.zip",
+    "hash": null
+  },
+  {
+    "model_name": "vosk-model-small-it-0_22",
+    "url": "https://alphacephei.com/vosk/models/vosk-model-small-it-0.22.zip",
+    "hash": null
+  },
+  {
+    "model_name": "vosk-model-it-0_22",
+    "url": "https://alphacephei.com/vosk/models/vosk-model-it-0.22.zip",
+    "hash": null
+  },
+  {
+    "model_name": "vosk-model-small-nl-0_22",
+    "url": "https://alphacephei.com/vosk/models/vosk-model-small-nl-0.22.zip",
+    "hash": null
+  },
+  {
+    "model_name": "vosk-model-nl-spraakherkenning-0_6",
+    "url": "https://alphacephei.com/vosk/models/vosk-model-nl-spraakherkenning-0.6.zip",
+    "hash": null
+  },
+  {
+    "model_name": "vosk-model-nl-spraakherkenning-0_6-lgraph",
+    "url": "https://alphacephei.com/vosk/models/vosk-model-nl-spraakherkenning-0.6-lgraph.zip",
+    "hash": null
+  },
+  {
+    "model_name": "vosk-model-small-ca-0_4",
+    "url": "https://alphacephei.com/vosk/models/vosk-model-small-ca-0.4.zip",
+    "hash": null
+  },
+  {
+    "model_name": "vosk-model-ar-mgb2-0_4",
+    "url": "https://alphacephei.com/vosk/models/vosk-model-ar-mgb2-0.4.zip",
+    "hash": null
+  },
+  {
+    "model_name": "vosk-model-ar-0_22-linto-1_1_0",
+    "url": "https://alphacephei.com/vosk/models/vosk-model-ar-0.22-linto-1.1.0.zip",
+    "hash": null
+  },
+  {
+    "model_name": "vosk-model-small-ar-tn-0_1-linto",
+    "url": "https://alphacephei.com/vosk/models/vosk-model-small-ar-tn-0.1-linto.zip",
+    "hash": null
+  },
+  {
+    "model_name": "vosk-model-ar-tn-0_1-linto",
+    "url": "https://alphacephei.com/vosk/models/vosk-model-ar-tn-0.1-linto.zip",
+    "hash": null
+  },
+  {
+    "model_name": "vosk-model-fa-0_42",
+    "url": "https://alphacephei.com/vosk/models/vosk-model-fa-0.42.zip",
+    "hash": null
+  },
+  {
+    "model_name": "vosk-model-small-fa-0_42",
+    "url": "https://alphacephei.com/vosk/models/vosk-model-small-fa-0.42.zip",
+    "hash": null
+  },
+  {
+    "model_name": "vosk-model-fa-0_5",
+    "url": "https://alphacephei.com/vosk/models/vosk-model-fa-0.5.zip",
+    "hash": null
+  },
+  {
+    "model_name": "vosk-model-small-fa-0_5",
+    "url": "https://alphacephei.com/vosk/models/vosk-model-small-fa-0.5.zip",
+    "hash": null
+  },
+  {
+    "model_name": "vosk-model-tl-ph-generic-0_6",
+    "url": "https://alphacephei.com/vosk/models/vosk-model-tl-ph-generic-0.6.zip",
+    "hash": null
+  },
+  {
+    "model_name": "vosk-model-small-uk-v3-nano",
+    "url": "https://alphacephei.com/vosk/models/vosk-model-small-uk-v3-nano.zip",
+    "hash": null
+  },
+  {
+    "model_name": "vosk-model-small-uk-v3-small",
+    "url": "https://alphacephei.com/vosk/models/vosk-model-small-uk-v3-small.zip",
+    "hash": null
+  },
+  {
+    "model_name": "vosk-model-uk-v3",
+    "url": "https://alphacephei.com/vosk/models/vosk-model-uk-v3.zip",
+    "hash": null
+  },
+  {
+    "model_name": "vosk-model-uk-v3-lgraph",
+    "url": "https://alphacephei.com/vosk/models/vosk-model-uk-v3-lgraph.zip",
+    "hash": null
+  },
+  {
+    "model_name": "vosk-model-small-kz-0_15",
+    "url": "https://alphacephei.com/vosk/models/vosk-model-small-kz-0.15.zip",
+    "hash": null
+  },
+  {
+    "model_name": "vosk-model-kz-0_15",
+    "url": "https://alphacephei.com/vosk/models/vosk-model-kz-0.15.zip",
+    "hash": null
+  },
+  {
+    "model_name": "vosk-model-small-sv-rhasspy-0_15",
+    "url": "https://alphacephei.com/vosk/models/vosk-model-small-sv-rhasspy-0.15.zip",
+    "hash": null
+  },
+  {
+    "model_name": "vosk-model-small-ja-0_22",
+    "url": "https://alphacephei.com/vosk/models/vosk-model-small-ja-0.22.zip",
+    "hash": null
+  },
+  {
+    "model_name": "vosk-model-ja-0_22",
+    "url": "https://alphacephei.com/vosk/models/vosk-model-ja-0.22.zip",
+    "hash": null
+  },
+  {
+    "model_name": "vosk-model-small-eo-0_42",
+    "url": "https://alphacephei.com/vosk/models/vosk-model-small-eo-0.42.zip",
+    "hash": null
+  },
+  {
+    "model_name": "vosk-model-small-hi-0_22",
+    "url": "https://alphacephei.com/vosk/models/vosk-model-small-hi-0.22.zip",
+    "hash": null
+  },
+  {
+    "model_name": "vosk-model-hi-0_22",
+    "url": "https://alphacephei.com/vosk/models/vosk-model-hi-0.22.zip",
+    "hash": null
+  },
+  {
+    "model_name": "vosk-model-small-cs-0_4-rhasspy",
+    "url": "https://alphacephei.com/vosk/models/vosk-model-small-cs-0.4-rhasspy.zip",
+    "hash": null
+  },
+  {
+    "model_name": "vosk-model-small-pl-0_22",
+    "url": "https://alphacephei.com/vosk/models/vosk-model-small-pl-0.22.zip",
+    "hash": null
+  },
+  {
+    "model_name": "vosk-model-small-uz-0_22",
+    "url": "https://alphacephei.com/vosk/models/vosk-model-small-uz-0.22.zip",
+    "hash": null
+  },
+  {
+    "model_name": "vosk-model-small-ko-0_22",
+    "url": "https://alphacephei.com/vosk/models/vosk-model-small-ko-0.22.zip",
+    "hash": null
+  },
+  {
+    "model_name": "vosk-model-br-0_8",
+    "url": "https://alphacephei.com/vosk/models/vosk-model-br-0.8.zip",
+    "hash": null
+  },
+  {
+    "model_name": "vosk-model-gu-0_42",
+    "url": "https://alphacephei.com/vosk/models/vosk-model-gu-0.42.zip",
+    "hash": null
+  },
+  {
+    "model_name": "vosk-model-small-gu-0_42",
+    "url": "https://alphacephei.com/vosk/models/vosk-model-small-gu-0.42.zip",
+    "hash": null
+  },
+  {
+    "model_name": "vosk-model-small-tg-0_22",
+    "url": "https://alphacephei.com/vosk/models/vosk-model-small-tg-0.22.zip",
+    "hash": null
+  },
+  {
+    "model_name": "vosk-model-tg-0_22",
+    "url": "https://alphacephei.com/vosk/models/vosk-model-tg-0.22.zip",
+    "hash": null
+  },
+  {
+    "model_name": "vosk-model-spk-0_4",
+    "url": "https://alphacephei.com/vosk/models/vosk-model-spk-0.4.zip",
+    "hash": null
+  },
+  {
+    "model_name": "punctuation-english",
+    "url": "https://alphacephei.com/vosk/models/vosk-recasepunc-en-0.22.zip",
+    "hash": null
+  },
+  {
+    "model_name": "punctuation-russian",
+    "url": "https://alphacephei.com/vosk/models/vosk-recasepunc-ru-0.22.zip",
+    "hash": null
+  },
+  {
+    "model_name": "punctuation-german",
+    "url": "https://alphacephei.com/vosk/models/vosk-recasepunc-de-0.21.zip",
+    "hash": null
+  },
+  {
+    "model_name": "vosk-model-ru-0_22",
+    "url": "https://alphacephei.com/vosk/models/vosk-model-ru-0.22.zip",
+    "hash": "14rgwxi1jnpbjnmw74fi6s8pan5w6xhs8qbn5wwi5rj0k9hba5xz"
+  }
+]
