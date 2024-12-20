@@ -16,7 +16,7 @@
     buildPhase = ''
       autoreconf -i
 
-      CFLAGS="-g -O2" ./configure \
+      CFLAGS="-g -O3" ./configure \
         --prefix=$out \
         --enable-static \
         --enable-shared \
@@ -108,13 +108,13 @@ in
     '';
 
     installPhase = ''
-      mkdir -p $out/lib $out/obj $out/include $out/src
-      
+      mkdir -p $out/{lib,obj,include,src}
+
       mv *.so $out/lib
+      chmod -x $out/lib/*.so
+
       mv *.o $out/obj
       mv *.h $out/include
-      mv -r . $out/src
-
-      mkdir
+      mv * $out/src
     '';
   }
