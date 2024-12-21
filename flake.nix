@@ -21,7 +21,7 @@
     in {
       packages = rec {
         default = vosk;
-        vosk = pkgs.callPackage ./package.nix {};
+        vosk = pkgs.callPackage ./vosk {};
         models = pkgs.callPackage ./models {};
       };
       devShells.default = pkgs.mkShell {

@@ -1,8 +1,8 @@
 {
   pkgs,
-  stdenv,
   symlinkJoin,
   fetchFromGitHub,
+  stdenv,
   ...
 }: let
   openfst = pkgs.openfst.overrideAttrs (oldAttrs: {
@@ -29,6 +29,31 @@
       make -j 10 && make install
     '';
   });
+
+  openblas-build = let
+    liblapack = pkgs.liblapack.override {
+      shared = false;
+    };
+  in
+    (pkgs.openblas.overrideAttrs
+      (oldAttrs: {
+        makeFlags =
+          oldAttrs.makeFlags
+          ++ [
+            "ONLY_CBLAS=1"
+            "DYNAMIC_ARCH=1"
+          ];
+
+        postInstall = ''
+          cp ${pkgs.libf2c}/lib/libf2c.a $out/lib
+          cp ${liblapack}/lib/liblapack.a $out/lib
+          ln $out/lib/libopenblas.a $out/lib/libblas.a
+        '';
+      }))
+    .override {
+      enableStatic = true;
+      enableShared = false;
+    };
 
   kaldi-merge = let
     kaldi-src = fetchFromGitHub {
@@ -68,6 +93,8 @@
         ln $out/lib/libkaldi-fstext.a $out/src/fstext/kaldi-fstext.a
         ln $out/lib/libkaldi-util.a $out/src/util/kaldi-util.a
         ln $out/lib/libkaldi-base.a $out/src/base/kaldi-base.a
+
+        cp ${openblas-build}/lib/libopenblas.a $out/lib
       '';
     };
 
@@ -77,31 +104,27 @@
     rev = "c13f1973ac5282c28dad9330e46d940ec2eee291";
     sha256 = "sha256-zifAvCb3IsS5n0VjfGV1iyzQ7RT0dzkz24toVl6NxJM=";
   };
-
-  openblas-src = fetchFromGitHub {
-    repo = "OpenBLAS";
-    owner = "OpenMathLib";
-    rev = "v0.3.20";
-    sha256 = "sha256-FLPVcepf7tv/es+4kur9Op7o3iVAAayuYN4hY/P4mmQ=";
-  };
 in
   stdenv.mkDerivation {
     name = "vosk";
 
-    src = fetchFromGitHub {
-      name = "vosk";
-      owner = "alphacep";
-      repo = "vosk-api";
-      rev = "a7bf6a51e299152a8fb496b928a21eb79a1d7bea";
-      sha256 = "sha256-E0Xl+TbI06ArHSk1t6DsXLUlfMQZGKQMTp7smGxgp2Y=";
-    };
+    # src = fetchFromGitHub {
+    #   name = "vosk";
+    #   owner = "alphacep";
+    #   repo = "vosk-api";
+    #   rev = "a7bf6a51e299152a8fb496b928a21eb79a1d7bea";
+    #   sha256 = "sha256-E0Xl+TbI06ArHSk1t6DsXLUlfMQZGKQMTp7smGxgp2Y=";
+    # };
+    src = ./src;
 
     buildPhase = ''
       export KALDI_ROOT=${kaldi-merge}
       export OPENFST_ROOT=${openfst}
       export CLAPACK_ROOT=${clapack-src}
-      export OPENBLAS_ROOT=${openblas-src}
-      export HAVE_OPENBLAS_CLAPACK=0
+      export OPENBLAS_ROOT=${openblas-build}
+      export EXTRA_CFLAGS="-fopenmp"
+      export EXTRA_LDFLAGS="-fopenmp"
+      export USE_SHARED=1
 
       cd src
       make
