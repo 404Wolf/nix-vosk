@@ -108,22 +108,27 @@ in
   stdenv.mkDerivation {
     name = "vosk";
 
-    # src = fetchFromGitHub {
-    #   name = "vosk";
-    #   owner = "alphacep";
-    #   repo = "vosk-api";
-    #   rev = "a7bf6a51e299152a8fb496b928a21eb79a1d7bea";
-    #   sha256 = "sha256-E0Xl+TbI06ArHSk1t6DsXLUlfMQZGKQMTp7smGxgp2Y=";
-    # };
-    src = ./src;
+    src = fetchFromGitHub {
+      name = "vosk";
+      owner = "alphacep";
+      repo = "vosk-api";
+      rev = "a7bf6a51e299152a8fb496b928a21eb79a1d7bea";
+      sha256 = "sha256-E0Xl+TbI06ArHSk1t6DsXLUlfMQZGKQMTp7smGxgp2Y=";
+    };
+
+    buildInputs = with pkgs; [
+      openblas
+      kaldi-merge
+      kaldi-merge
+      clapack-src
+      openblas-build
+    ];
 
     buildPhase = ''
       export KALDI_ROOT=${kaldi-merge}
       export OPENFST_ROOT=${openfst}
       export CLAPACK_ROOT=${clapack-src}
       export OPENBLAS_ROOT=${openblas-build}
-      export EXTRA_CFLAGS="-fopenmp"
-      export EXTRA_LDFLAGS="-fopenmp"
       export USE_SHARED=1
 
       cd src
