@@ -30,6 +30,8 @@
       packages = rec {
         default = vosk;
         vosk = pkgs.callPackage ./vosk/vosk.nix {};
+        openfst = pkgs.callPackage ./vosk/openfst.nix {};
+        openblas = pkgs.callPackage ./vosk/openblas.nix {};
         models = pkgs.callPackage ./models {};
         kaldi = pkgs.callPackage ./vosk/kaldi.nix {};
       };

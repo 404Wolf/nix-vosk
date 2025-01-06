@@ -2,6 +2,7 @@
   stdenv,
   fetchFromGitHub,
   callPackage,
+  libf2c
 }: let
   kaldi = callPackage ./kaldi.nix {};
   openblas = callPackage ./openblas.nix {};
@@ -24,19 +25,23 @@ in
       openblas
     ];
 
+    KALDI_ROOT = "${kaldi}";
+    OPENFST_ROOT = "${openfst}";
+    OPENBLAS_INCLUDE = "${openblas.dev}/include";
+    OPENBLAS_LIB = "${openblas}/lib";
+    F2C_LIB = "${libf2c}/lib";
+    USE_SHARED = 1;
+
     buildPhase = ''
       rm src/Makefile
       cp ${./Makefile} src/Makefile
 
-      # export KALDI_ROOT=${kaldi};
-      # export OPENFST_ROOT=${openfst};
-      # export OPENBLAS_ROOT=${openblas};
-
-      export USE_SHARED=1;
-      export EXTRA_CFLAGS="$(find ${kaldi}/include/kaldi -type d | xargs -I {} echo "-I{}")";
-      echo $EXTRA_CFLAGS
-
       cd src
+
+      # export EXTRA_CFLAGS="$(find ${kaldi}/include/kaldi -type d | xargs -I {} echo "-I{}")";
+      # export EXTRA_LDFLAGS=$EXTRA_CFLAGS;
+      # echo $EXTRA_CFLAGS
+
       make
     '';
 
