@@ -1,3 +1,7 @@
+# Compiler
+CXX?=g++
+EXT?=so
+
 # Locations of the dependencies
 KALDI_ROOT?=$(HOME)/kaldi
 KALDI_INCLUDE?=$(KALDI_ROOT)/include/kaldi
@@ -13,14 +17,13 @@ F2C_LIB?=$(HOME)/f2c
 MKL_ROOT?=/opt/intel/mkl
 CUDA_ROOT?=/usr/local/cuda
 USE_SHARED?=0
+
 # Math libraries
 HAVE_OPENBLAS_CLAPACK?=1
 HAVE_MKL?=0
 HAVE_ACCELERATE=0
 HAVE_CUDA?=0
-# Compiler
-CXX?=g++
-EXT?=so
+
 # Extra
 EXTRA_CFLAGS?=
 EXTRA_LDFLAGS?=

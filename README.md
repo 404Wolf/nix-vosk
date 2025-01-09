@@ -1,4 +1,5 @@
-# Nix Vosk
+# Nix-ified Vosk
 
-Nix build of Vosk language transcription. Includes both a build of `vosk-api` and of actual models.
+Nix build of Vosk language transcription. Includes both a build of `libvosk.so`
+and all vosk models.
 

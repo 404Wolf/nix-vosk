@@ -2,7 +2,7 @@
   stdenv,
   fetchFromGitHub,
   callPackage,
-  libf2c
+  libf2c,
 }: let
   kaldi = callPackage ./kaldi.nix {};
   openblas = callPackage ./openblas.nix {};
@@ -38,15 +38,14 @@ in
 
       cd src
 
-      # export EXTRA_CFLAGS="$(find ${kaldi}/include/kaldi -type d | xargs -I {} echo "-I{}")";
-      # export EXTRA_LDFLAGS=$EXTRA_CFLAGS;
-      # echo $EXTRA_CFLAGS
-
       make
     '';
 
     installPhase = ''
-      mkdir -p $out
-      cp -r * $out
+      mkdir -p $out/{include,lib,src}
+
+      cp *.h $out/include
+      cp *.cc $out/src
+      cp *.so $out/lib
     '';
   }
